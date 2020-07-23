@@ -1,0 +1,26 @@
+Shire : 283
+Gondor : 257
+Mordor : 220
+Rohan : 203
+Tirith: 151
+Isengard : 137
+Black Gate: 120
+Rivendell : 117
+Bree : 96
+Moria : 89
+Bag End: 85
+Lórien : 71
+Orthanc : 70
+Anduin : 69
+Fangorn : 64
+Middle-earth : 57
+Hobbiton : 54
+Morgul : 47
+Helm's Deep : 44
+Mirkwood : 42
+Ithilien : 38
+Lothlórien : 37
+Amroth : 35
+Osgiliath : 34
+Edoras : 32
+Barad-dûr : 28
