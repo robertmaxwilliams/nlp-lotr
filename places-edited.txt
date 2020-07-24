@@ -2,9 +2,9 @@ Shire : 283
 Gondor : 257
 Mordor : 220
 Rohan : 203
-Tirith: 151
+Tirith : 151
 Isengard : 137
-Black Gate: 120
+Black Gate : 120
 Rivendell : 117
 Bree : 96
 Moria : 89
