@@ -77,20 +77,20 @@ MERGE (a:Place {name: line[0], frequency: toInteger(line[1])});
 LOAD CSV FROM 'file:///name-name.csv' AS line
 MATCH (a:Person { name: line[0] })
 MATCH (b:Person { name: line[1]})
-MERGE (a)-[:EDGE { weight: toFloat(line[2]) }]->(b);
+MERGE (a)-[:KNOWS { weight: toFloat(line[2]) }]->(b);
 
 LOAD CSV FROM 'file:///name-place.csv' AS line
 MATCH (a:Person { name: line[0] })
 MATCH (b:Place { name: line[1]})
-MERGE (a)-[:EDGE { weight: toFloat(line[2]) }]->(b);
+MERGE (a)-[:AT { weight: toFloat(line[2]) }]->(b);
 
 LOAD CSV FROM 'file:///place-place.csv' AS line
 MATCH (a:Place { name: line[0] })
 MATCH (b:Place { name: line[1]})
-MERGE (a)-[:EDGE { weight: toFloat(line[2]) }]->(b);
+MERGE (a)-[:NEAR { weight: toFloat(line[2]) }]->(b);
 
-match ()-[e:EDGE]->()
-set e.log_weight = log(e.weight)
+match ()-[e]->()
+set e.log_weight = log(e.weight);
 ```
 
 Now we can start visualizing this thing.
